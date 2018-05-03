@@ -1,0 +1,9 @@
+[DEFAULT]
+services = app, celery
+region = us-east-1
+
+[staging]
+cluster = staging
+
+[prod]
+cluster = prod
