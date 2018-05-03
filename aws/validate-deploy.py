@@ -1,7 +1,10 @@
 #! /usr/bin/env python
 
 import boto3
-from configparser import ConfigParser
+try:
+    from configparser import ConfigParser
+except ImportError:
+    from ConfigParser import ConfigParser
 import logging
 import sys
 from multiprocessing import Pool
